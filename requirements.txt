@@ -1,0 +1,14 @@
+torch
+transformers
+accelerate
+sentence-transformers
+faiss-cpu
+flask
+pypdf
+python-docx
+numpy
+pandas
+openpyxl
+xlrd
+beautifulsoup4
+lxml

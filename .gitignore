@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.DS_Store
+data/faiss_index/*
+!data/faiss_index/.gitkeep
+# păstrează documentele local; nu le urca în repo dacă sunt interne/confidențiale
+data/docs/*
+!data/docs/.gitkeep

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ app_name }}</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <main class="layout">
+    <header class="header">
+      <h1>Asistent RAG Local</h1>
+      <p>Asistent RAG local pentru documentele din <code>data/docs</code>.</p>
+    </header>
+
+    <section class="panel tools">
+      <div>
+        <h2>Documente</h2>
+        <input id="fileInput" type="file" multiple accept=".pdf,.docx,.txt,.md,.csv,.xls,.xlsx,.xlsm,.json,.xml,.html,.htm">
+        <button id="uploadBtn">Upload</button>
+        <button id="reindexBtn">Reindex</button>
+        <button id="clearChatBtn" class="secondary" type="button">Șterge chat</button>
+      </div>
+      <pre id="status" class="status">Ready.</pre>
+    </section>
+
+    <section class="panel chat">
+      <div id="messages" class="messages"></div>
+      <div class="composer">
+        <textarea id="question" rows="3" placeholder="Scrie întrebarea aici..."></textarea>
+        <button id="askBtn">Ask</button>
+      </div>
+    </section>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
